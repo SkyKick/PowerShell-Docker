@@ -676,13 +676,13 @@ function Get-TestParams
         }
         else
         {
-            $packageUrl = [System.UriBuilder]::new('https://github.com/PowerShell/PowerShell/releases/download/')
+            $packageUrl = [System.UriBuilder]::new('https://github.com/SkyKick/PowerShell/releases/download/')
 
             $previewTag = ''
-            if($psversion -like '*-*')
-            {
-                $previewTag = '-preview'
-            }
+            # if($psversion -like '*-*')
+            # {
+            #    $previewTag = '-preview'
+            # }
 
             $packageName = $allMeta.meta.PackageFormat -replace '\${PS_VERSION}', $packageVersion
             $packageName = $packageName -replace '\${previewTag}', $previewTag

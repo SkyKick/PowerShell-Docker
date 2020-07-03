@@ -4,9 +4,9 @@ ARG imageRepo=ubuntu
 
 FROM ${imageRepo}:${fromTag} AS installer-env
 
-ARG PS_VERSION=6.2.0
+ARG PS_VERSION=7.0.2-skykick.1
 ARG PS_PACKAGE=powershell_${PS_VERSION}-1.ubuntu.18.04_amd64.deb
-ARG PS_PACKAGE_URL=https://github.com/PowerShell/PowerShell/releases/download/v${PS_VERSION}/${PS_PACKAGE}
+ARG PS_PACKAGE_URL=https://github.com/SkyKick/PowerShell/releases/download/v${PS_VERSION}/${PS_PACKAGE}
 
 # Define ENVs for Localization/Globalization
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false \
