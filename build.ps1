@@ -391,7 +391,7 @@ End {
                 $imagePath = $allMeta.imagePath
                 $relativeImagePath = $imagePath -replace $PSScriptRoot
                 $relativeImagePath = $relativeImagePath -replace '\\', '/'
-                $dockerfile = "https://github.com/PowerShell/PowerShell-Docker/blob/master$relativeImagePath/docker/Dockerfile"
+                $dockerfile = "https://github.com/SkyKick/PowerShell-Docker/blob/master$relativeImagePath/docker/Dockerfile"
 
                 $osVersion = $allMeta.meta.osVersion
                 if($osVersion -or $GenerateMatrixJson.IsPresent)
